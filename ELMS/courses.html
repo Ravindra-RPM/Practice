@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style1.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg mx-auto shadow"><!-- navbar code start-->
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./static/images/edroad-logo-removebg-preview.png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="d-flex nav-search" role="search">
+                    <input class="form-control mx-2 " type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <ul class="navbar-nav ps-5 ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            User
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav><!-- navbar code end-->
+
+    <main class="container mt-4 py-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row ">
+                    <div class="col-md-11 sidebar-filter glass shadow gy-4 mx-auto p-4">
+                        <h4>Price</h4>
+                        <hr class="line">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="free" value="Free">
+                            <label class="form-check-label">Free</label>                            
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check2" name="free" value="Paid">
+                            <label class="form-check-label">Paid</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-11 sidebar-filter glass shadow gy-4 mx-auto p-4">
+                        <h4>Languages</h4>
+                        <hr class="line">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-c" name="c" value="C">
+                            <label class="form-check-label">C</label>                            
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-html" name="html" value="html">
+                            <label class="form-check-label">HTML</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-css" name="css" value="css">
+                            <label class="form-check-label">CSS</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-js" name="js" value="js">
+                            <label class="form-check-label">JavaScript</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-python" name="python" value="python">
+                            <label class="form-check-label">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-bootstrap" name="bootstrap" value="bootstrap">
+                            <label class="form-check-label">Bootstrap</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check-django" name="free" value="django">
+                            <label class="form-check-label">DJango</label>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4 gy-4"><!--card start -->
+                        <div class="card card-1 p-2 glass">
+                            <img src="./static/images/course-thumbnail.jpg" class="card-img-top rounded-2"
+                                alt="course image">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Learn Coading</h5>
+                                <p class="card-text mb-0">Ravindra Menkudale</p>
+                                <p class="rating mb-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </p>
+                                <p class="rating mb-1"> 5 star</p>
+                                <p class="price fw-bold">&#8377;<span>500</span></p>
+                                <a href="cart.html" class="btn btn-outline-secondary pb-1">Enroll</a>
+                            </div>
+                        </div>
+                    </div><!--card end-->
+                    <div class="col-md-4 gy-4"><!--card start -->
+                        <div class="card card-1 p-2 glass">
+                            <img src="./static/images/course-thumbnail.jpg" class="card-img-top rounded-2"
+                                alt="course image">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Learn Coading</h5>
+                                <p class="card-text mb-0">Ravindra Menkudale</p>
+                                <p class="rating mb-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </p>
+                                <p class="rating mb-1"> 5 star</p>
+                                <p class="price fw-bold">&#8377;<span>500</span></p>
+                                <a href="cart.html" class="btn btn-outline-secondary pb-1">Enroll</a>
+                            </div>
+                        </div>
+                    </div><!--card end-->
+                    <div class="col-md-4 gy-4"><!--card start -->
+                        <div class="card card-1 p-2 glass">
+                            <img src="./static/images/course-thumbnail.jpg" class="card-img-top rounded-2"
+                                alt="course image">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Learn Coading</h5>
+                                <p class="card-text mb-0">Ravindra Menkudale</p>
+                                <p class="rating mb-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </p>
+                                <p class="rating mb-1"> 5 star</p>
+                                <p class="price fw-bold">&#8377;<span>500</span></p>
+                                <a href="cart.html" class="btn btn-outline-secondary pb-1">Enroll</a>
+                            </div>
+                        </div>
+                    </div><!--card end-->
+                    <div class="col-md-4 gy-4"><!--card start -->
+                        <div class="card card-1 p-2 glass">
+                            <img src="./static/images/course-thumbnail.jpg" class="card-img-top rounded-2"
+                                alt="course image">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Learn Coading</h5>
+                                <p class="card-text mb-0">Ravindra Menkudale</p>
+                                <p class="rating mb-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </p>
+                                <p class="rating mb-1"> 5 star</p>
+                                <p class="price fw-bold">&#8377;<span>500</span></p>
+                                <a href="cart.html" class="btn btn-outline-secondary pb-1">Enroll</a>
+                            </div>
+                        </div>
+                    </div><!--card end-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer content code start-->
+    <div class="container-fluid foot">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center px-5 py-3 mt-4 shadow">
+            <p class="col-md-4 mb-0 text-body-secondary ">© 2024 Company, Inc</p>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- footer content code end-->
+
+
+    <script src="./static/js/popper.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+</body>
+
+</html>

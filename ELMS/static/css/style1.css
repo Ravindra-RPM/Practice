@@ -1,0 +1,291 @@
+body {
+    /* background-image: linear-gradient(120deg, #faf8f8 0%, white 100%); */
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+}
+
+/* ----------navbar css  start------------- */
+/*.navbar{
+    position: sticky;
+    top:0px;
+
+}*/
+.nav-search {
+    margin-left: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.nav-search input {
+    background-color: transparent;
+    border-radius: 20px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+
+.nav-search input:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-item .nav-link:hover {
+    color: #ab3288;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.2s ease-in-out;
+}
+
+/* ----------navbar css end------------- */
+
+
+.container {
+    /* ----------general container css start------------- */
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+/* ----------general container css start------------- */
+
+::-webkit-scrollbar {
+    /* ----------scroll-bar css start------------- */
+    width: 0.5rem;
+    background-color: grey;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5rem;
+}
+
+/* ----------scroll-bar css end------------- */
+
+.foot {
+    /* ----------footer css start------------- */
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ----------footer css end------------- */
+
+
+/* ----------course-filter css start------------- */
+.sidebar-filter {
+    max-height: 100vh;
+    min-height: 30vh;
+}
+
+/* ----------course-filter css end------------- */
+
+.glass {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* box-shadow: 4px 8px 5px yellow; */
+}
+
+.card {
+    box-shadow: 4px 8px 5px rgba(143, 143, 142, 0.753);
+    transition: 0.15s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 5px rgba(195, 0, 255, 0.753);
+    
+}
+
+.card-1:hover{
+    transform: scale(105%,105%);
+}
+
+.card-body  a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-body ul a li {     
+    list-style-image: url("../images/film.svg");
+     
+}
+
+.card-body ul a li::marker {     
+    font-size: 1.8em;
+    line-height: 0.1;    
+}
+hr.line{
+    /* background: linear-gradient(to right, red, yellow); */
+    height:5px;
+    background:linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.running {
+    color: black;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: run 5s ease-in-out 0.05s infinite alternate;
+}
+
+@keyframes run {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: green
+    }
+
+    75% {
+        color: yellow
+    }
+
+    100% {
+        color: blue;
+        transform: translateX(80%);
+
+    }
+
+}
+
+
+/* ----------- course-details page css start ------------- */
+.course-details-hero {
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 0.4rem;
+    min-height: 30vh;
+    height: fit-content;
+    color: var(--bs-light);
+
+}
+
+.enroll-now {
+    height: 5rem;
+    position: sticky;
+    top: 4rem;
+    left: 4rem;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: enrollRotate 2s linear 0.02s infinite alternate;
+
+}
+
+@keyframes enrollRotate {
+    from {}
+
+    to {
+        transform: rotateY(90deg);
+        /* transform: rotateY(3.142rad); */
+    }
+}
+
+.course-details-hero p {
+    font-size: .9rem;
+
+}
+
+.course-details-hero p span.creator {
+    font-size: .9rem;
+    color: rgb(194, 153, 224);
+    text-decoration: 2px underline;
+
+}
+
+.golden {
+    color: goldenrod;
+}
+
+.sidebar-purchase-section {
+
+    /* background-image: linear-gradient(to left, #96fbc4 0%, #f9f586 100%); */
+    background-color: #F0EDE6;
+    /* background-color: var(--bs-light); */
+    color: black;
+    border-radius: .4rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+    /* width: inherit; */
+}
+
+.sidebar-purchase-section button {
+    background-color: transparent;
+    width: fit-content;
+    outline: none;
+    border: 0.125rem solid blueviolet;
+    color: black;
+    font-weight: 600;
+
+}
+
+.sidebar-purchase-section button:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    box-shadow: 3px 5px 6px rgb(190, 132, 245);
+    font-weight: 600;
+}
+
+/* ----------- course-details page css end ------------- */
+
+@media only screen and (max-width: 800px) {
+    .sticky {
+        width: 100%;
+    }
+}
+
+/* ----------- course-details page css end ------------- */
+
+/* ------------------- cart page css start.html ------------------- */
+.cart-course-thumbnail{
+    width:8.5rem;
+    height:5.2rem;
+}
+
+.total-section a{
+    width:95%;
+}
+
+.total-section a.total-price button{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    width: 95%;
+    outline: none;
+    border: 0.125rem solid blueviolet;
+    color: black;
+    font-weight: 600;
+
+}
+
+.total-section a.total-price button:hover {
+    color: white;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    box-shadow: 3px 5px 6px rgb(190, 132, 245);
+    font-weight: 600;
+}
+/* ------------------- cart page css end.html ------------------- */
+
+/* ------------------- login page css start.html ------------------- */
+
+.login-container{
+    height:100vh
+}
+
+.input-group{
+    margin: 2.0rem 0;
+}
+
+.login-button{
+
+}
+
+.login-button:hover{
+
+}
+/* ------------------- login page css end.html ------------------- */
