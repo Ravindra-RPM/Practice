@@ -1,0 +1,87 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-weight:normal ;
+}
+ 
+body{
+    background-color: #ccc;
+    padding: 10px 10px;
+}
+.envolope-container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 5px 5%;
+    background-color: #ccc;
+}
+
+.main-video video{
+    width:100%;
+    border-radius: 10px;
+    
+}
+
+.main-video .title{
+    font-size: 23px;
+    color: #333;
+    padding-top: 15px;
+}
+
+.video-list{
+    background-color: aliceblue;
+    border-radius: 10px;
+    height:85vh;
+    overflow-y: scroll;
+}
+
+.video-list::-webkit-scrollbar{
+    width:7px;
+}
+
+.video-list::-webkit-scrollbar-track{
+    background-color: #333;
+}
+
+.video-list::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+
+.video-list .vid video{
+    width:100px;
+    border-radius: 5px;
+}
+
+.video-list .vid{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border:1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+
+}
+
+.video-list .vid.active{
+    background-color: lightskyblue;
+}
+.video-list .vid.active .title{
+    color: #fff;
+}
+.video-list .vid .title{
+    color: #333;
+    font-size: 17px;
+}
+
+
+/* 
+apti   - 5
+sql    - 18
+python - 20
+djng   - 7 */

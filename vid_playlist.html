@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="envolope-container">
+        <div class="main-video">
+            <video src="videos/Bleach01.mkv" controls muted autoplay></video>
+            <h2 class="title">Episode 01</h2>
+        </div>
+        
+        <div class="video-list">
+            <div class="vid active">
+                <video src="videos/Bleach01.mkv" controls muted></video>
+                <h2 class="title">Episode 01</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach02.mkv" controls muted></video>
+                <h2 class="title">Episode 02</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach03.mkv" controls muted></video>
+                <h2 class="title">Episode 03</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach04.mkv" controls muted></video>
+                <h2 class="title">Episode 04</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach05.mkv" controls muted></video>
+                <h2 class="title">Episode 05</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach06.mkv" controls muted></video>
+                <h2 class="title">Episode 06</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach07.mkv" controls muted></video>
+                <h2 class="title">Episode 07</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach08.mkv" controls muted></video>
+                <h2 class="title">Episode 08</h2>
+            </div>
+            <div class="vid">
+                <video src="videos/Bleach09.mkv" controls muted></video>
+                <h2 class="title">Episode 09</h2>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        console.log(listVideo)
+        let mainVideo = document.querySelector('.main-video video');
+        console.log(mainVideo)
+        let title = document.querySelector('.main-video .title')
+        console.log(title)
+
+        listVideo.forEach(video =>{
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+</body>
+</html>
